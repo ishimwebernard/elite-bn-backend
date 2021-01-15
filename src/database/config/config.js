@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require('dotenv').config()
+=======
+require('dotenv').config();
+>>>>>>> b476e38b0b0038e56abe6253c90e0595dbb8853c
 
 module.exports = {
   development: {
@@ -13,4 +17,8 @@ module.exports = {
     url: process.env.DB_PROD_URL,
     dialect: 'postgres',
   },
+<<<<<<< HEAD
 }
+=======
+};
+>>>>>>> b476e38b0b0038e56abe6253c90e0595dbb8853c
