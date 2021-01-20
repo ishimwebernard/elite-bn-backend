@@ -4,6 +4,7 @@ import welcomeRoute from './welcome';
 import Badroute from './badroute';
 import swaggerDocs from '../swagger/swagger';
 import user from './api/usersRoutes';
+import passportSetup from '../config/passportSetup';
 
 const router = Router();
 
