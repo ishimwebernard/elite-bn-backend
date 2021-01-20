@@ -13,6 +13,7 @@
     "coverage": "nyc --reporter=html --reporter=text npm test",
     "coveralls": "npm run coverage && nyc report --reporter=lcov --reporter=text",
     "db:migrate": "sequelize db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo:all",
     "db:seed": "sequelize db:seed:all"
   },
   "repository": {
@@ -39,8 +40,13 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
     "nodemon": "^2.0.7",
     "nyc": "^15.1.0",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth2": "^0.2.0",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",

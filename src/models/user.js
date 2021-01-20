@@ -1,3 +1,5 @@
+const { Model } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     firstName: DataTypes.STRING,
@@ -7,13 +9,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   User.associate = (models) => {
     // associations can be defined here
-    User.hasMany(models.Post, {
-      foreignKey: 'userId',
-      as: 'posts',
-      onDelete: 'CASCADE',
-    });
   };
   return User;
 };
 
 // src/models/user.js
+
